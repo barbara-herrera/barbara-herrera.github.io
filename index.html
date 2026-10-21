@@ -109,6 +109,58 @@ r<!DOCTYPE html>
         margin-bottom: 60px;
       }
     }
+    .project-card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+    
+    .project-image-placeholder {
+      background: #f1f1f1;
+      min-height: 360px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #777;
+    }
+    
+    .project-info h3 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    
+    .project-subtitle {
+      font-size: 1.1rem;
+    }
+    
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 24px;
+    }
+    
+    .project-tags span {
+      border: 1px solid #bbb;
+      border-radius: 20px;
+      padding: 5px 12px;
+      font-size: 0.85rem;
+    }
+    
+    details {
+      margin-top: 30px;
+    }
+    
+    @media (max-width: 700px) {
+      .project-card {
+        grid-template-columns: 1fr;
+      }
+    
+      .project-image-placeholder {
+        min-height: 260px;
+      }
+    }
   </style>
 </head>
 
@@ -120,11 +172,10 @@ r<!DOCTYPE html>
     <section class="intro">
       <h1>Barbara Herrera</h1>
 
-      <p><strong>Experience Design MSc student at Halmstad University.</strong></p>
+      <p><strong>MSc Experience Design student at Halmstad University</strong></p>
 
       <p>
-        I am exploring how research, interaction and prototyping can be used
-        to understand and improve everyday experiences.
+          This portfolio follows the projects I am developing during my MSc in Experience Design, including the research, decisions, prototypes and changes that happen along the way.
       </p>
     </section>
 
@@ -135,70 +186,87 @@ r<!DOCTYPE html>
 
       <article class="project">
 
-        <p class="project-meta">
-          Experience Design · Research · Prototyping
+  <div class="project-card">
+
+    <div class="project-image-placeholder">
+      Project image
+    </div>
+
+    <div class="project-info">
+
+      <p class="project-meta">
+        Understanding Experiences · Halmstad University
+      </p>
+
+      <h3>Full Fridge</h3>
+
+      <p class="project-subtitle">
+        <strong>
+          Improving the shared fridge experience and storage organisation
+        </strong>
+      </p>
+
+      <p>
+        A project developed around the Student Kitchens at Halmstad University,
+        looking at how students use the shared fridges and how the space could be
+        organised differently.
+      </p>
+
+      <div class="project-tags">
+        <span>Research</span>
+        <span>Observation</span>
+        <span>Physical Prototyping</span>
+        <span>Interaction</span>
+      </div>
+
+    </div>
+
+  </div>
+
+  <details>
+    <summary>Explore project ↓</summary>
+
+    <div class="project-content">
+
+      <section>
+        <h3>Project Context</h3>
+        <p>
+          This project started with a broad exploration of shared spaces
+          at Halmstad University. Our group decided to focus on the
+          Student Kitchen and understand how students experience and use
+          this shared environment.
         </p>
+      </section>
 
-        <h3>Full Fridge</h3>
+      <section>
+        <h3>Understanding the Experience</h3>
+        <p>
+          We explored the Student Kitchen through interviews,
+          observations and mapping activities. As the project developed,
+          the shared fridge became our main area of focus.
+        </p>
+      </section>
 
-        <div class="project-summary">
-          <p>
-            <strong>
-              Improving the shared fridge experience and storage organisation
-            </strong>
-          </p>
+      <section>
+        <h3>From Research to Ideas</h3>
+        <p>
+          Different directions were explored around fridge use,
+          organisation and the experience of sharing the space.
+        </p>
+      </section>
 
-          <p>
-            An Experience Design project exploring how students use shared
-            refrigerators at Halmstad University, moving from research and
-            observation to physical and interactive prototyping.
-          </p>
-        </div>
+      <section>
+        <h3>Prototyping</h3>
+        <p>
+          The project moved towards a combination of private compartments
+          and shared organisation using organisers inside the fridge.
+        </p>
+      </section>
 
-        <details>
-          <summary>Explore project ↓</summary>
+    </div>
+  </details>
 
-          <div class="project-content">
-
-            <section>
-              <h3>Project Context</h3>
-              <p>
-                This project started with a broad exploration of shared spaces
-                at Halmstad University. Our group decided to focus on the
-                Student Kitchen and understand how students experience and use
-                this shared environment.
-              </p>
-            </section>
-
-            <section>
-              <h3>Understanding the Experience</h3>
-              <p>
-                We explored the Student Kitchen through interviews,
-                observations and mapping activities. As the project developed,
-                the shared fridge became our main area of focus.
-              </p>
-            </section>
-
-            <section>
-              <h3>From Research to Ideas</h3>
-              <p>
-                Different directions were explored around fridge use,
-                organisation and the experience of sharing the space.
-              </p>
-            </section>
-
-            <section>
-              <h3>Prototyping</h3>
-              <p>
-                The project moved towards a combination of private compartments
-                and shared organisation using organisers inside the fridge.
-              </p>
-            </section>
-
-          </div>
-        </details>
-
-      </article>
+</article>
     </section>
 
 
